@@ -1,0 +1,205 @@
+body{
+  
+    
+    height: 120vh;
+    background-image: linear-gradient(rgba(253, 140, 253, 0.50), rgba(125, 0, 125, 0.95)), url(images/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+ 
+}
+#main-container{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
+    
+
+}
+#footer-links{
+    grid-column: 1 /span 3;
+    background-color:#47036F;
+    padding: 0.5em;
+    color: lavenderblush;
+    margin-top: 2%;
+}
+.footer-a>a{
+    text-decoration: none;
+    color: lavenderblush;
+    font-size: 0.8em
+}
+#footer-links>ul{
+    list-style: none;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 12% 12% 12% 12% ;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+#heading{
+    grid-column: 1 /span 3;
+    background-color:#47036F;
+    padding: 0.5em;
+    color: lavenderblush;
+}
+#logo{
+    font-size: 1.4em;
+    text-align: center;
+    background-color: #7b13b8;
+    width: 50%;
+}
+
+#nav-bar>ul{
+    list-style: none;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 30% 17.5% 17.5% 17.5% 17.5%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.nav>a{
+    text-decoration: none;
+    color: lavenderblush;
+    font-size: 1.3em;
+}
+
+#dropdwn-content{
+    display: none;
+    position: absolute;
+    background-color: #bd5396e1;
+    text-align: center;
+    width: 15%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+
+
+}
+.col-content{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 0.3em;
+    font-size: 1.2em;
+    
+}
+
+.col-content1{
+    margin-top: 15%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    
+}
+#dropdwn-content>hr{
+    color: #47036F;
+    width: 50%;
+}
+.service {
+    
+    background: rgba(239, 184, 255, 0.75);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow:0 0 20px -15px black;
+    z-index: 1;
+    transition: transform .7s;
+    padding-bottom: 20%;
+}
+
+
+.service-logo {
+    width: 130px;
+    height: 130px;
+    background: white;
+    border-radius: 50%;
+    border: 10px solid rgb(155, 96, 251);
+    margin: -90px auto 0;
+    background: #7752A2
+
+ 
+}
+
+.service-logo img {
+    margin-top: 30px;
+    width: 90px;
+    
+
+}
+
+#aboutus-title{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 1.5em;
+}
+/**div{
+    border: black solid 5px;
+}**/
+.col-content:hover .service {
+    transform: translateY(-50px);
+}
+
+.col-content1:hover .service {
+    transform: translateY(-50px);
+}
+#dropdwn:hover #dropdwn-content{
+    display: block;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        height: 100%;
+    }
+
+    #main-container{
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: none;
+    }
+    #heading{
+        grid-column: 1 /span 1;
+        
+    }
+    #footer-links>ul{
+
+        grid-template-rows: auto;
+        grid-template-columns: none;
+        
+    }
+    #col-content{
+        width: 100%;
+    }
+    #nav-bar>ul{
+        list-style: none;
+        display: grid;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns:none ;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center; 
+    }
+    #logo{
+        font-size: 1.4em;
+        text-align: center;
+        background-color: #7b13b8;
+        width: 100%;
+    }
+    .nav>a{
+        border-bottom: solid lavenderblush 3px;
+     }
+
+
+}
